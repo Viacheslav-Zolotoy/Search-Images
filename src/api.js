@@ -1,7 +1,6 @@
 import Notiflix from 'notiflix';
 import { page } from './index';
 import { perPage } from './index';
-import { observer } from './index';
 const axios = require('axios').default;
 export async function fetchImg(typeValue) {
     const response = await axios.get('https://pixabay.com/api/', {

@@ -66,5 +66,3 @@ function observerFunc() {
     observer = new IntersectionObserver(callback, options);
     observer.observe(target)
 };
-
-// Button loading
