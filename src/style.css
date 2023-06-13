@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.search-form {
+  background: linear-gradient(200deg, #ffff00, #0084ff);
+  text-align: center;
+  padding: 20 0 20 0;
+  border-radius: 5px;
+}
+.search-form input {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+}
+.search-form button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  transition: transform 0.15s ease;
+  background-color: #00a2ff;
+}
+.search-form button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.gallery__link {
+  display: block;
+  text-decoration: none;
+}
+.gallery__link img {
+  display: block;
+  object-fit: cover;
+
+  /* width: 360px; */
+  /* height: 280px; */
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.photo-card {
+  width: 300px; /* Задати ширину блоку */
+  border: 1px solid #ccc; /* Додати рамку */
+  border-radius: 8px; /* Заокруглені кути блоку */
+  padding: 10px; /* Відступи всередині блоку */
+  margin-top: 10px;
+  background: linear-gradient(135deg, #ffff00, #00bfff);
+  transition: transform 0.3s ease;
+}
+.photo-card:hover {
+  transform: scale(1.05);
+}
